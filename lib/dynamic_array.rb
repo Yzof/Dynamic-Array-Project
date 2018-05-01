@@ -28,8 +28,9 @@ class DynamicArray
     if @length <= 0
       raise 'index out of bounds'
     end
-    popped = @store[@length]
-    'byebug'
+    popped = @store[@length - 1]
+    # puts"--------------------------------------------"
+    # puts '--------------------------------------------'
     @store[@length] = nil
     @length -= 1
     popped
